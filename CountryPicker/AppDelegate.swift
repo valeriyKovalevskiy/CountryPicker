@@ -1,9 +1,6 @@
-//
-//  AppDelegate.swift
-//  CountryPicker
-//
+
 //  Created by Valeriy Kovalevskiy on 9/10/20.
-//  Copyright © 2020 Valeriy Kovalevskiy. All rights reserved.
+//  Copyright © 2019 Valeriy Kovalevskiy. All rights reserved.
 //
 
 import UIKit

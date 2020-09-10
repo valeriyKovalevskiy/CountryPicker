@@ -1,9 +1,6 @@
-//
-//  SceneDelegate.swift
-//  CountryPicker
-//
-//  Created by Valeriy Kovalevskiy on 9/10/20.
-//  Copyright © 2020 Valeriy Kovalevskiy. All rights reserved.
+
+//  Created by Valeriy Kovalevskiy on 9/9/20.
+//  Copyright © 2019 Valeriy Kovalevskiy. All rights reserved.
 //
 
 import UIKit

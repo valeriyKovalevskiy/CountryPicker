@@ -13,6 +13,9 @@
 		26F80E6A250A327A003056A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F80E68250A327A003056A5 /* Main.storyboard */; };
 		26F80E6C250A327C003056A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F80E6B250A327C003056A5 /* Assets.xcassets */; };
 		26F80E6F250A327C003056A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F80E6D250A327C003056A5 /* LaunchScreen.storyboard */; };
+		26F80E7A250A3299003056A5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F80E77250A3299003056A5 /* Country.swift */; };
+		26F80E7B250A3299003056A5 /* CountryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F80E78250A3299003056A5 /* CountryCodes.json */; };
+		26F80E7C250A3299003056A5 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F80E79250A3299003056A5 /* CountryPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		26F80E6B250A327C003056A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26F80E6E250A327C003056A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F80E70250A327C003056A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F80E77250A3299003056A5 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		26F80E78250A3299003056A5 /* CountryCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
+		26F80E79250A3299003056A5 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		26F80E61250A327A003056A5 /* CountryPicker */ = {
 			isa = PBXGroup;
 			children = (
+				26F80E76250A328B003056A5 /* Picker */,
 				26F80E62250A327A003056A5 /* AppDelegate.swift */,
 				26F80E64250A327A003056A5 /* SceneDelegate.swift */,
 				26F80E66250A327A003056A5 /* ViewController.swift */,
@@ -65,6 +72,40 @@
 				26F80E70250A327C003056A5 /* Info.plist */,
 			);
 			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		26F80E76250A328B003056A5 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				26F80E7E250A32AA003056A5 /* Source */,
+				26F80E7F250A32B3003056A5 /* View */,
+				26F80E7D250A329D003056A5 /* Model */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		26F80E7D250A329D003056A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26F80E77250A3299003056A5 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26F80E7E250A32AA003056A5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				26F80E78250A3299003056A5 /* CountryCodes.json */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		26F80E7F250A32B3003056A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26F80E79250A3299003056A5 /* CountryPicker.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +169,7 @@
 				26F80E6F250A327C003056A5 /* LaunchScreen.storyboard in Resources */,
 				26F80E6C250A327C003056A5 /* Assets.xcassets in Resources */,
 				26F80E6A250A327A003056A5 /* Main.storyboard in Resources */,
+				26F80E7B250A3299003056A5 /* CountryCodes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F80E7A250A3299003056A5 /* Country.swift in Sources */,
+				26F80E7C250A3299003056A5 /* CountryPicker.swift in Sources */,
 				26F80E67250A327A003056A5 /* ViewController.swift in Sources */,
 				26F80E63250A327A003056A5 /* AppDelegate.swift in Sources */,
 				26F80E65250A327A003056A5 /* SceneDelegate.swift in Sources */,
@@ -285,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3599HR3Q7R;
 				INFOPLIST_FILE = CountryPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3599HR3Q7R;
 				INFOPLIST_FILE = CountryPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
